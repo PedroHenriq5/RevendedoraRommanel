@@ -1,5 +1,5 @@
 import style from "./NavBar.module.css";
-import Button from "../Button/Button";
+
 import Input from "../Input/Input";
 
 function NavBar() {
@@ -10,12 +10,16 @@ function NavBar() {
       </div>
 
       <div className={style.search}>
-        <Input placeholder="Pesquisar" />
+        <Input placeholder="Exemplo: Aliança de ..." />
       </div>
 
-      <div className={style.buttons}>
-        <Button text="Pesquisar" onClick={() => {}} />
-        <Button text="Contato" onClick={() => {}} />
+      <div className={style.LinkContainer}>
+        <a href="#" className={style.linker}>
+          Pesquisar
+        </a>
+        <a href="#" className={style.linker}>
+          Contato
+        </a>
       </div>
     </nav>
   );

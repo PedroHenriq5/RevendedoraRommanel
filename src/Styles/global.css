@@ -41,3 +41,9 @@ input{
     font-family: inherit;
     outline: none;
 }
+
+/* links */
+a{
+    text-decoration: none;
+    color: inherit;
+}

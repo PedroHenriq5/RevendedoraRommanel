@@ -1,10 +1,13 @@
-import NavBar from "./components/NavBar/NavBar";
+import { NavBar, Carousel, Footer } from '../src/exports';
 
 function App() {
 
+  
   return (
     <>
       <NavBar />
+      <Carousel />
+      <Footer />
     </>
   )
 }
