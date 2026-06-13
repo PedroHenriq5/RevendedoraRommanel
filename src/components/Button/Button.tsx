@@ -2,7 +2,7 @@ import styles from "./Button.module.css";
 
 type BtnProps = {
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 function Button({ text, onClick }: BtnProps) {

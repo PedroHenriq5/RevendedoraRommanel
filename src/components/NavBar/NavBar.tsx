@@ -14,10 +14,10 @@ function NavBar() {
       </div>
 
       <div className={style.LinkContainer}>
-        <a href="#" className={style.linker}>
+        <a href="#" className={`${style.linker} ${style.searchBtn}`}>
           Pesquisar
         </a>
-        <a href="#" className={style.linker}>
+        <a href="#" className={`${style.linker} ${style.contactBtn}`}>
           Contato
         </a>
       </div>

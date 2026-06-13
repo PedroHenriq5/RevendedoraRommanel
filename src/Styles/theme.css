@@ -1,0 +1,16 @@
+:root{
+    --gold: #D4AF37;
+    --black-smooth: #1A1A1A;
+    --white: #FFFFFF;
+    --cream: #FFF9F2;
+
+    --gray-100: #0a0f1a;
+    --gray-200: #181f2e;
+    --gray-300: #272f43;
+    --gray-400: #363d56;
+    --gray-500: #454f6a;
+    --gray-600: #555f7d;
+    --gray-700: #aab3cc;
+    --gray-800: #cdd3e1;
+    --gray-900: #e6e9f0;
+}

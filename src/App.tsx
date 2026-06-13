@@ -1,13 +1,12 @@
-import { NavBar, Carousel, Footer } from '../src/exports';
+import Home from "./Pages/Home/Home"
+
 
 function App() {
 
   
   return (
     <>
-      <NavBar />
-      <Carousel />
-      <Footer />
+      <Home />
     </>
   )
 }

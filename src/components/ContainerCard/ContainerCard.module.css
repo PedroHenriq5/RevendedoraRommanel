@@ -1,0 +1,51 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem;
+    list-style: none;
+    margin: 0;
+}
+
+.CardItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all transform 0.2s ease-in-out;
+}
+
+.CardItem:hover{
+    transform: translateY(-0.5px);
+}
+
+.CardItem img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ProductDescription{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 0.5rem 0;
+}
