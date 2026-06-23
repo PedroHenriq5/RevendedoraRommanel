@@ -1,0 +1,50 @@
+.MainNotFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    line-height: 1.3;
+    background-image: url("../../Assets/Images/backImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.MainNotFound h1{
+    font-size: 15rem;
+    color: #333;
+}
+
+.MainNotFound h2{
+    font-size: 5rem;
+    color: #333;
+}
+
+.MainNotFound p{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.HomeLink{
+    width: 50rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: var(--gold);
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.HomeLink:hover{
+    transform: scale(1.1);
+}

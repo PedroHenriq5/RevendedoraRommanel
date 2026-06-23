@@ -14,7 +14,6 @@ html{
 body{
     width: 100%;
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     background-color: #f8f8f8;
     color: #111;
@@ -44,5 +43,13 @@ input{
 a{
     text-decoration: none;
     color: inherit;
+    font-family: var(--font-sans);
 }
 
+h1{
+    font-family: var(--font-serif);
+}
+
+p{
+    font-family: var(--font-sans);
+}

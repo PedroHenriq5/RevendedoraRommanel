@@ -1,13 +1,15 @@
-import { NavBar, Carousel, Footer, Card } from '../../exports';
+import MainLayout from "../../Templates/MainLayout/MainLayout";
+import {Carousel, Card } from '../../exports';
 
 
 function Home() {
     return(
         <>
-            <NavBar />
-            <Carousel />
-            <Card/>
-            <Footer />
+            <MainLayout>
+                <Carousel />
+                <Card/>    
+            </MainLayout>
+            
         </>
     )
 }
