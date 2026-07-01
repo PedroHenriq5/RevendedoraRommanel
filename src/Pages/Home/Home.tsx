@@ -1,3 +1,4 @@
+import { productData } from "../../Data/Data";
 import MainLayout from "../../Templates/MainLayout/MainLayout";
 import {Carousel, Card } from '../../exports';
 
@@ -7,7 +8,8 @@ function Home() {
         <>
             <MainLayout>
                 <Carousel />
-                <Card/>    
+                <Card Title="Coleções" products={productData} />  
+                  
             </MainLayout>
             
         </>

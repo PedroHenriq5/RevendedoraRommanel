@@ -1,11 +1,18 @@
-import { NavBar, Footer} from "../../exports";
+import { productDetails } from "../../Data/Data";
+import { Card, Banner, ButtonReturn } from "../../exports";
+import MainLayout from "../../Templates/MainLayout/MainLayout";
+
+import BannerMarriage from "../../assets/Images/Banner-marriage.png"
+
+
 
 function Alliances() {
     return(
-        <>
-            <NavBar />
-            <Footer />
-        </>
+        <MainLayout>
+            <ButtonReturn />
+            <Banner url={BannerMarriage} text="Banner de Exemplo" />
+            <Card Title="Modelos" products={productDetails} />
+        </MainLayout>
     )   
 }
 
