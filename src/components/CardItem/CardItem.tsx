@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import Styles from './CardItem.module.css';
 
 type CardItemProps = {
@@ -7,9 +8,9 @@ type CardItemProps = {
 
 function CardItem(props: CardItemProps) {
     return(
-        <a href={props.href} className={Styles.cardItem}>
+        <Link to={props.href} className={Styles.cardItem}>
             {props.children} 
-        </a>
+        </Link>
     )
 }
 

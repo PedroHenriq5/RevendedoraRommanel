@@ -1,8 +1,6 @@
-import { Routes, Route, useLocation, BrowserRouter } from 'react-router';
-import Home from '../Pages/Home/Home';
 import { useEffect } from 'react';
-import Alliances from '../Pages/Alliances/Alliances';
-import NotFound from '../Pages/NotFound/NotFound';
+import { Routes, Route, useLocation, BrowserRouter } from 'react-router';
+import { Home, Engagement, Glasses, Makeup, Earrings, NotFound, PageProduct } from '../exports';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -18,7 +16,11 @@ function MainRouters() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product/aliancas" element={<Alliances />} />
+        <Route path="/product/aliancas" element={<Engagement />} />
+        <Route path="/product/oculos" element={<Glasses />} />
+        <Route path="/product/maquiagem" element={<Makeup />} />
+        <Route path="/product/brincos" element={<Earrings />} />
+        <Route path="/product/:category/:id" element={<PageProduct />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ScrollToTop />

@@ -8,8 +8,11 @@ function Home() {
         <>
             <MainLayout>
                 <Carousel />
-                <Card Title="Coleções" products={productData} />  
-                  
+                <Card 
+                    Title="Coleções" 
+                    products={productData} 
+                    getHref={(item) => `/product/${item.product}`}
+                />                   
             </MainLayout>
             
         </>

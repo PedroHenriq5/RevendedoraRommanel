@@ -5,9 +5,10 @@ import Style from './ContainerCard.module.css';
 type CardProps = {
     products: Product[];
     Title: string;
+    getHref: (item: Product) => string;
 }
 
-function Card({ products = [], Title}: CardProps) {
+function Card({ products = [], Title, getHref }: CardProps) {
     return (
         <section className={Style.Container}>
             <div className={Style.Header}>
@@ -16,7 +17,7 @@ function Card({ products = [], Title}: CardProps) {
             <div className={Style.Cards}>
                 {products.map((iten) => (
                     <div className={Style.CardItem} key={iten.id}>
-                        <CardItem href={`/product/${iten.product.toLowerCase()}`}>
+                        <CardItem href={getHref(iten)}>
                             <img src={iten.image} alt={iten.alt} />
                         </CardItem>
                         <p className={Style.ProductDescription}>{iten.description}</p>

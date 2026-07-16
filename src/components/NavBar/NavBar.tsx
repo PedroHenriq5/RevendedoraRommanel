@@ -1,4 +1,5 @@
 import style from "./NavBar.module.css";
+import logo from "../../assets/Images/logo.png";
 
 import Input from "../Input/Input";
 
@@ -6,7 +7,7 @@ function NavBar() {
   return (
     <nav className={style.navBar}>
       <div className={style.logo}>
-        <img src="" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
 
       <div className={style.search}>

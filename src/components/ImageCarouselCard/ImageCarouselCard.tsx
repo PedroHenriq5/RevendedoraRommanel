@@ -1,4 +1,4 @@
-import Styles from "./ImageBanner.module.css";
+import Styles from "./ImageCarouselCard.module.css";
 
 function ImageBanner({ imageSrc, altText }: { imageSrc: string, altText: string }) {
   return (

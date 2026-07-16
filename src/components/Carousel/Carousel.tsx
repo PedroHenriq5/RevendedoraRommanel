@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-import ImageCard from '../ImageCard/ImageBanner';
+import ImageCarouselCard from '../ImageCarouselCard/ImageCarouselCard';
 import Button from '../Button/Button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -53,7 +53,7 @@ function Carousel() {
                         <SwiperSlide key={index}>
                             <div className={style.slide}>
                                 <div className={style.imageContainer}>
-                                    <ImageCard imageSrc={image.src} altText={image.alt} />
+                                    <ImageCarouselCard imageSrc={image.src} altText={image.alt} />
                                 </div>
                                 <div className={style.overlay}>
                                     <div className={style.content}>

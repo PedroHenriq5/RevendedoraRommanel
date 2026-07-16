@@ -6,3 +6,15 @@ export { default as Card } from "./components/ContainerCard/ContainerCard";
 export { default as Button } from "./components/Button/Button";
 export { default as Banner } from "./components/Banner/Banner";
 export { default as ButtonReturn } from "./components/ButtonReturn/ButtonReturn";
+export { default as ProductDescription } from "./components/ProductDescription/ProductDescription";
+export { default as ProductInfo } from "./components/ProductInfo/ProductInfo";
+export { default as ProductImage } from "./components/ProductImage/ProductImage";
+
+//pages
+export { default as Home } from './Pages/Home/Home';
+export { default as Engagement } from './Pages/Engagement/Engagement';
+export { default as Glasses } from './Pages/Glasses/Glasses';
+export { default as Makeup } from './Pages/Makeup/Makeup';
+export { default as Earrings } from './Pages/Earrings/Earrings';
+export { default as NotFound } from './Pages/NotFound/NotFound';
+export { default as PageProduct } from './Pages/Product/Product';  
