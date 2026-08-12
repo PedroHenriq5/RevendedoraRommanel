@@ -8,12 +8,19 @@ type ProductInfoProps = {
 
 function ProductInfo({ product }: ProductInfoProps) {
   return (
-    <div className={Styles.productInfo}>
-      <h1>{product.product}</h1>
-      <p>{product.description}</p>
-      <span className={Styles.price}>{product.price}</span>
-      <Button text="Add to Cart" onClick={() => console.log('Added to cart')} />
-    </div>
+    <section className={Styles.productInfo}>
+      <div className={Styles.productDetails}>
+        <h1>{product.product}</h1>
+      </div>
+      
+      <div className={Styles.priceContainer}>
+        <span className={Styles.price}>R$ {product.price}</span>
+      </div>
+
+      <div className={Styles.buttonContainer}>
+        <Button text="Add to Cart" onClick={() => console.log('Added to cart')} />
+      </div>
+    </section>
   );
 }
 

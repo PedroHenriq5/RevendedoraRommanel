@@ -13,12 +13,23 @@ html{
 /* corpo da página */
 body{
     width: 100%;
-    min-height: 100vh;
     font-size: 1.6rem;
-    background-color: #f8f8f8;
-    color: #111;
+    background-color: #f7e4c5;
+    color: var(--black-smooth);
     padding-top: 70px;
     overflow-x: hidden;
+}
+
+/* Tamanho mínimo da página */
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+#root {
+    min-height: 100vh;
 }
 
 /* imagens */

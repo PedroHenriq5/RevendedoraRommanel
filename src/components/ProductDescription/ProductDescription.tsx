@@ -7,10 +7,13 @@ type ProductDescriptionProps = {
 
 function ProductDescription({ product }: ProductDescriptionProps) {
     return (
-        <div className={Styles.productDescription}>
+        <section className={Styles.productDescription}>
             <h2>{product.product}</h2>
-            <p>{product.description}</p>
-        </div>
+            <div className={Styles.productDescriptionText}>
+                <p>{product.description}</p>
+                <p>{product.description}</p>
+            </div>
+        </section>
     )
 }
 

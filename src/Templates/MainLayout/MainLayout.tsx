@@ -1,5 +1,5 @@
 import { NavBar, Footer } from "../../exports"
-
+import Styles from "./MainLayout.module.css";
 
 type MainLayout = {
     children: React.ReactNode;
@@ -7,11 +7,13 @@ type MainLayout = {
 
 function MainLayout({ children }: MainLayout) {
     return (
-        <>
+        <div className={Styles.mainLayout}>
             <NavBar />
-            {children}
+            <main className={Styles.mainContent}>
+                {children}
+            </main>
             <Footer />
-        </>
+        </div>
     )
 }
 

@@ -20,7 +20,7 @@ function Card({ products = [], Title, getHref }: CardProps) {
                         <CardItem href={getHref(iten)}>
                             <img src={iten.image} alt={iten.alt} />
                         </CardItem>
-                        <p className={Style.ProductDescription}>{iten.description}</p>
+                        <p className={Style.ProductDescription}>{iten.alt}</p>
                     </div>
                 ))}
             </div>
